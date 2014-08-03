@@ -21,7 +21,7 @@ $routes['POST'][] = array(
    "name"=>"UsersController",
    "path"=>"{CONTROLLERSPATH}users_controller.class.php",
    "pattern"=>"@^users/accounts$@",
-   "method"=>"insert"
+   "method"=>"registerUser"
 );
 
 $routes['POST'][] = array(
