@@ -1,0 +1,27 @@
+<div id="items">
+	<div id="controls"><h2>Items</h2></div>
+	<table id="items" class="table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% _.each(items.models, function(item){ %>
+				<tr class="item-row" data-model-cid="<%=item.cid%>">
+					<td><%= item.get("itm_name") %></td>
+					<td><%= item.get("itm_desc") %></td>
+				</tr>
+				<% }); %>
+			</tbody>
+		</table>
+</div>
+<div id="add_item_form">
+	<input class="btn btn-primary" type="button" id="btn_show_form" value="Add Item To Collection"/><br/><br/>
+	<div id="add_details_form" class="form-inline"  style="display:none;">
+		 <input type="text" id="itm_name" name="itm_name" placeholder="Item Name"><br/><br/>
+		 <textarea id="itm_desc" name="itm_desc" placeholder="Item Description"></textarea>
+	</div><br/>
+	<input id="btn_add_item" type="button" class="btn" value="Add" style="display:none;"/>
+</div>

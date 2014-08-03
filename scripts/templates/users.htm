@@ -1,0 +1,18 @@
+<div id="usersTemplate">
+	<table id="users" class="table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% _.each(users.models, function(user){ %>
+				<tr class="user-row">
+					<td><%= user.get("usr_username") %></td>
+					<td><%= user.get("usr_email") %></td>
+				</tr>
+				<% }); %>
+			</tbody>
+		</table>
+	</div>

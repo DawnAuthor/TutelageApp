@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8" />
+        <title>Tutelage</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="scripts/css/footer.css">
+    </head>
+    <body>	
+    		<div id="main_container">
+    			<div id="navbar"> </div>
+    			<div id="content"> </div>
+    			<footer id="container_bottom">&copy; Darryl Taylor </footer>
+    		</div>
+            <div id="footer"></div>
+            
+             <script src="scripts/core/borrowBoot.js"></script>
+            <script src="scripts/libs/jquery_1_10_1.js"></script>
+            <script src="scripts/libs/jqueryValidation.js"></script>
+            <script src="scripts/libs/underscore.js"></script>
+            <script src="scripts/libs/backbone.js"></script>   
+            <script src="scripts/libs/bootstrap.min.js"></script>       
+            <script src="scripts/libs/jqueryUI.min.js"></script> 
+            <script data-main="scripts/load" src="scripts/libs/require.js"> </script>
+    		<script type="text/javascript">
+			$(document).ready(function(){
+				require(['router'], function(Router){
+					var AppRouter = new Router();
+					AppRouter.on();
+					document.router = AppRouter;
+					Backbone.history.start();
+					AppRouter.navigate("", {trigger:true});
+				});
+			});
+
+		</script>
+    		
+    </body>
+</html>
