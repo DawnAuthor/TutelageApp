@@ -30,7 +30,9 @@ body
 	font-family:Arial;
 	font-size: 0.8em;
 }
-
+body{
+	padding-top:70px;
+}
 .landing_page_header{
     position: absolute;
     width: 400px;

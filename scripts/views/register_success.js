@@ -12,6 +12,7 @@ define(["tpl!templates/register_success.htm", "models/UserModel"], function(temp
 			var self = this;
 			document.router.navigate("login", {trigger:true});
 		}
+	});
 		
 	return RegisterSuccessView;
 });

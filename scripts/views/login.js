@@ -23,23 +23,23 @@ define(["tpl!templates/login.htm"], function(template){
 				});
 			});
 
-			$('#showModal').click(function(){
-				$('#myModal').modal('show');
-			});
+			// $('#showModal').click(function(){
+			// 	$('#myModal').modal('show');
+			// });
 
-			$('#example').hover(function(){
-				$('#example').popover('show');
-			},
-			function(){
-				$('#example').popover('hide');
-			});
+			// $('#example').hover(function(){
+			// 	$('#example').popover('show');
+			// },
+			// function(){
+			// 	$('#example').popover('hide');
+			// });
 
-			$('#ttEx').hover(function(){
-				$('#ttEx').tooltip('show');
-			},
-			function(){
-				$('#ttEx').tooltip('hide');
-			});
+			// $('#ttEx').hover(function(){
+			// 	$('#ttEx').tooltip('show');
+			// },
+			// function(){
+			// 	$('#ttEx').tooltip('hide');
+			// });
 			
 		},
 
